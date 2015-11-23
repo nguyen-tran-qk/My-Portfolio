@@ -1,0 +1,16 @@
+/* Include some cool fonts */
+
+@font-face {
+    font-family: 'Chelsea';
+    src: url("/fonts/Chelsea/Chelsea.ttf");
+}
+@font-face {
+    font-family: 'Nairobi';
+    src: url("/fonts/Nairobi/Nairobi.ttf");
+}
+@font-face {
+    font-family: 'Cabana';
+    src: url("fonts/Cabana Font/cabana.otf");
+}
+
+/**/

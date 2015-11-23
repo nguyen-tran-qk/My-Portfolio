@@ -1,0 +1,92 @@
+/* Hover caption on slide 2 of My Projects */
+.grid {
+    padding: 0px 0px 400px 0px;
+    max-width: 900px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+.grid li {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+.grid figure {
+    margin: 10px;
+    position: relative;
+}
+.grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #2c3f52;
+    color: #ed4e6e;
+}
+.grid figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.grid figcaption a {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #ed4e6e;
+    color: #fff;
+}
+.effect-2 li {
+    -webkit-perspective: 1700px;
+    -webkit-perspective-origin: 0 50%;
+    perspective: 1700px;
+    perspective-origin: 0 50%;
+}
+.effect-2 figure {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.effect-2 figure > div {
+    overflow: hidden;
+}
+.effect-2 figure img {
+    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;
+}
+.effect-2 figure:hover img {
+    transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+}
+.effect-2 figcaption {
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+}
+.effect-2 figure:hover figcaption {
+    opacity: 1;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transition: transform 0.4s, opacity 0.1s;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+}
+.effect-2 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+/**/

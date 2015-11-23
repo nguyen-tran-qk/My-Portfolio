@@ -1,0 +1,49 @@
+/*Navigation bar*/
+
+nav {
+    top: 0px;
+    position: fixed;
+    background-color: #fff;
+    color: #888;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+    /*fix a hover state on list items: */
+    overflow: hidden;/* prevent img spilling out of container when it moves */
+    /**/
+    text-align: right;
+    min-width: 800px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    /*CSS transitions*/
+    -webkit-transition: all 0.2s;
+    /*all css attr take 0.2s to transition*/
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+nav ul li a {
+    color: #aaa;
+    display: block;
+    line-height: 40px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+nav > ul >li:hover {
+    background-color: rgb(100, 100, 100);
+}
+nav > ul > li:hover > a {
+    color: rgb(255, 255, 255)
+}
+
+/**/

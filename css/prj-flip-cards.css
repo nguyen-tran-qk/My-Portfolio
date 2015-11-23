@@ -1,0 +1,42 @@
+/* Flipping Cards on slide 1 of My Projects*/
+
+.prj-card {
+    position: relative;
+    float: left;
+    padding-bottom: 25%;
+    width: 25%;
+    min-width: 25%;
+    text-align: center;
+    margin-bottom: 30%;
+}
+.prj-card-front,
+.prj-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.prj-card-front,
+.prj-card-back {
+    backface-visibility: hidden;
+    transition: transform 0.7s;
+}
+.prj-card-front img,
+.prj-card-back img {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+}
+.prj-card-back {
+    /*    background-color: dodgerblue;*/
+    transform: rotateY(-180deg);
+}
+.prj-card.effect-hover:hover .prj-card-front {
+    transform: rotateY(-180deg);
+}
+.prj-card.effect-hover:hover .prj-card-back {
+    transform: rotateY(0);
+}
+
+/**/

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <!-- FullPage JS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.js"></script>
+    <!--  FakeLoader JS  -->
+    <link href="css/fakeLoader.css" rel="stylesheet">
+    <script src="javascript/fakeLoader.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="javascript/fullPage_script.js"></script>
+    <script src="javascript/fakeLoader_script.js"></script>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="my-loader"></div>
+    <nav>
+        <ul id="myMenu">
+            <li data-menuanchor="HomePage" class="active"><a href="#HomePage">Home Page</a></li>
+            <li data-menuanchor="AboutMe"><a href="#AboutMe">About Me</a></li>
+            <li data-menuanchor="MyProjects"><a href="#MyProjects">My Projects</a></li>
+            <li data-menuanchor="ContactMe"><a href="#ContactMe">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div id="fullpage">
+        <!--    Home Page    -->
+        <div id="first_page" class="section vertical-scrolling">
+            <img id="avatar" src="http://icons.iconarchive.com/icons/jonathan-rey/simpsons/256/Homer-Simpson-04-Happy-icon.png">
+            <h1 class="username">Khôi Nguyên</h1>
+            <p class="welcome-p">Welcome to the house of Awesomeness!</p>
+        </div>
+        <!--About Me-->
+        <div id="about" class="section vertical-scrolling">
+            <div class="flex-wrap">
+                <div class="title-center">About Me</div>
+            </div>
+            <div class="nairobi-font">
+                Below are something I want to tell you guys about myself.</br>
+                Hover your mouse on the pictures to read the details, or you can keep scrolling to the next part :)
+            </div>
+            <div class="slideshow">
+                <figure>
+                    <img src="images/about.jpg" width="90%" height="540px">
+                    <figcaption>
+                        <strong>Fullname:</strong>Trần Quang Khôi Nguyên.
+                        <strong>Born:</strong> Jan 1995.
+                        <br/>
+                        <strong>Strength:</strong> Handsome and Confident.
+                        <strong>Weakness:</strong> Too handsome to handle and Over-confident.
+                        <br/>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/student.jpg" width="90%" height="540px" style="background-style:cover;">
+                    <figcaption>At present, I am a third-year student at FPT University majored in Computer Science.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dream_1920x1080.jpg" width="90%" height="540">
+                    <figcaption>
+                        <strong>My hobbies</strong> are simple: I code, I sleep, I play whenever I'm not eating!!! And someday, I want to be a <strong>professional web developer, a leader and a master of my own life!</strong>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <!--My Projects-->
+        <div id="projects" class="section vertical-scrolling">
+            <div class="flex-wrap">
+                <div class="title-center">My Projects</div>
+            </div>
+            <div class="nairobi-font">
+                Check out my projects by clicking their thumbnails below.</br>
+                There's nothing at the moment. But more to come soon!
+            </div>
+            <div class="horizontal-scrolling">
+                <a href="#">
+                    <div class="prj-card effect-hover">
+                        <div class="prj-card-front">
+                            <img src="images/prj-card1.PNG">
+                        </div>
+                        <div class="prj-card-back">
+                            <img src="images/prj-card1-back.PNG">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="prj-card effect-hover">
+                        <div class="prj-card-front">
+                            <img src="images/project_1.jpg">
+                        </div>
+                        <div class="prj-card-back">
+                            <img src="images/project_2.jpg">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="prj-card effect-hover">
+                        <div class="prj-card-front">
+                            <img src="images/project_3.jpg">
+                        </div>
+                        <div class="prj-card-back">
+                            <img src="images/project_4.jpg">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="prj-card effect-hover">
+                        <div class="prj-card-front">
+                            <img src="images/project_5.jpg">
+                        </div>
+                        <div class="prj-card-back">
+                            <img src="images/project_6.jpg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="horizontal-scrolling">
+                <ul class="grid effect-2">
+                    <li>
+                        <figure>
+                            <div><img src="images/projects_slide_2/1.png"></div>
+                            <figcaption>
+                                <h3>Camera</h3>
+                                <a href="#">See it</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div><img src="images/projects_slide_2/2.png"></div>
+                            <figcaption>
+                                <h3>Music</h3>
+                                <a href="#">See it</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div><img src="images/projects_slide_2/4.png"></div>
+                            <figcaption>
+                                <h3>Safari</h3>
+                                <a href="#">See it</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div><img src="images/projects_slide_2/3.png"></div>
+                            <figcaption>
+                                <h3>Windmill</h3>
+                                <a href="#">See it</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Contact Me-->
+        <div id="contact" class="section vertical-scrolling">
+            <div class="flex-wrap">
+                <div class="title-center">Contact Me</div>
+            </div>
+            <div class="icon-wrapper icon-effect icon-effect-1">
+                <a href="#" class="flex-item icon icon-mobile">Mobile</a>
+                <a href="#" class="flex-item icon icon-mail">Mail</a>
+                <a href="#" class="flex-item icon icon-facebook">Facebook</a>
+                <a href="#" class="flex-item icon icon-github">Github</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
